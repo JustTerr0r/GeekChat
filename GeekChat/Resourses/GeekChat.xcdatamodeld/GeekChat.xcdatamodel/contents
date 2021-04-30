@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17709" systemVersion="20D91" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Chat" representedClassName="Chat" syncable="YES" codeGenerationType="class">
+        <attribute name="chatID" optional="YES" attributeType="String"/>
+        <attribute name="text" optional="YES" attributeType="String"/>
+        <attribute name="user" optional="YES" attributeType="Integer 16" usesScalarValueType="YES"/>
+        <relationship name="idList" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="ChatID" inverseName="chat" inverseEntity="ChatID"/>
+    </entity>
+    <entity name="ChatID" representedClassName="ChatID" syncable="YES" codeGenerationType="class">
+        <attribute name="iD" optional="YES" attributeType="String"/>
+        <relationship name="chat" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Chat" inverseName="idList" inverseEntity="Chat"/>
+    </entity>
+    <elements>
+        <element name="Chat" positionX="-189.8558044433594" positionY="14.3748779296875" width="128" height="89"/>
+        <element name="ChatID" positionX="-171" positionY="63" width="128" height="59"/>
+    </elements>
+</model>

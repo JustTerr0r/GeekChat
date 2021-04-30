@@ -1,0 +1,14 @@
+/* 
+  Localizable.strings
+  GeekChat
+
+  Created by Stanislav Frolov on 28.04.2021.
+  
+*/
+
+"enterButton" = "Enter";
+"textFieldBack" = "Enter your message...";
+"chats" = "Chats";
+"settings" = "Settings";
+"logout" = "Logout";
+"newChat" = "Start new chat";
