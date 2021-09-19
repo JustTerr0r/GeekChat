@@ -25,7 +25,7 @@ class ViewController: UIViewController {
         initialize()
         setupButton()
     }
-    
+    // Enter button core
     private func setupButton() {
         enterButton.addTarget(self, action: #selector(goChat), for: .touchUpInside)
     }
@@ -40,7 +40,7 @@ class ViewController: UIViewController {
         DispatchQueue.main.asyncAfter(deadline: .now() + 1) { self.present(navigation, animated: true) }
         
     }
-    
+    // Set UI
     private func initialize(){
         view.addSubview(logoImage)
         logoImage.layer.shadowOffset = CGSize(width: 0, height: 2)
